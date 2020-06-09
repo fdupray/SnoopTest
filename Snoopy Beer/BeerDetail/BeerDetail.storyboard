@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gTh-L6-XZq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beer Detail View Controller-->
+        <scene sceneID="k1d-qd-hjs">
+            <objects>
+                <viewController storyboardIdentifier="BeerDetailViewController" id="gTh-L6-XZq" customClass="BeerDetailViewController" customModule="Snoopy_Beer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="db1-mR-eDk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SLU-l8-9Zh">
+                                <rect key="frame" x="87" y="44" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="24z-pR-b0Z"/>
+                                    <constraint firstAttribute="width" constant="240" id="JOU-fF-dV8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-08-NPi">
+                                <rect key="frame" x="158.5" y="300" width="97.5" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="9kf-qh-sNO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVt-IW-v6R">
+                                <rect key="frame" x="165.5" y="331" width="83" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="2Bz-5g-lQV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP1-8K-J6z">
+                                <rect key="frame" x="169" y="382.5" width="76.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food pairings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqQ-F4-kK0">
+                                <rect key="frame" x="161" y="460" width="92" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8L-u2-EUv">
+                                <rect key="frame" x="186" y="407.5" width="42" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="2pu-TT-1AR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zo-e0-Gzx">
+                                <rect key="frame" x="186" y="485" width="42" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="bDf-Xv-dPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tVt-IW-v6R" firstAttribute="top" secondItem="sEd-08-NPi" secondAttribute="bottom" constant="8" id="0no-MF-eBa"/>
+                            <constraint firstItem="sEd-08-NPi" firstAttribute="centerX" secondItem="db1-mR-eDk" secondAttribute="centerX" id="1Sq-Z0-8zh"/>
+                            <constraint firstItem="hP1-8K-J6z" firstAttribute="centerX" secondItem="db1-mR-eDk" secondAttribute="centerX" id="4bA-MH-cJv"/>
+                            <constraint firstItem="I8L-u2-EUv" firstAttribute="centerX" secondItem="db1-mR-eDk" secondAttribute="centerX" id="9FG-nv-D0A"/>
+                            <constraint firstItem="3zo-e0-Gzx" firstAttribute="centerX" secondItem="db1-mR-eDk" secondAttribute="centerX" id="CV5-DC-xWC"/>
+                            <constraint firstItem="sEd-08-NPi" firstAttribute="top" secondItem="SLU-l8-9Zh" secondAttribute="bottom" constant="16" id="Ht5-Ey-CPp"/>
+                            <constraint firstItem="SLU-l8-9Zh" firstAttribute="top" secondItem="2Iu-kz-zfM" secondAttribute="top" id="Lmk-rU-mQY"/>
+                            <constraint firstItem="hP1-8K-J6z" firstAttribute="top" secondItem="tVt-IW-v6R" secondAttribute="bottom" constant="32" id="Rch-cj-dTu"/>
+                            <constraint firstItem="tVt-IW-v6R" firstAttribute="centerX" secondItem="db1-mR-eDk" secondAttribute="centerX" id="Xib-CK-xs9"/>
+                            <constraint firstItem="SLU-l8-9Zh" firstAttribute="centerX" secondItem="db1-mR-eDk" secondAttribute="centerX" id="Yve-xj-meV"/>
+                            <constraint firstItem="VqQ-F4-kK0" firstAttribute="centerX" secondItem="db1-mR-eDk" secondAttribute="centerX" id="aad-an-dpf"/>
+                            <constraint firstItem="VqQ-F4-kK0" firstAttribute="top" secondItem="I8L-u2-EUv" secondAttribute="bottom" constant="32" id="i4s-1Q-z0L"/>
+                            <constraint firstItem="3zo-e0-Gzx" firstAttribute="top" secondItem="VqQ-F4-kK0" secondAttribute="bottom" constant="8" id="rHP-Ul-lIW"/>
+                            <constraint firstItem="I8L-u2-EUv" firstAttribute="top" secondItem="hP1-8K-J6z" secondAttribute="bottom" constant="8" id="ykf-Gr-69Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Iu-kz-zfM"/>
+                    </view>
+                    <connections>
+                        <outlet property="beerDescriptionLabel" destination="tVt-IW-v6R" id="a9K-B0-4CU"/>
+                        <outlet property="beerImageView" destination="SLU-l8-9Zh" id="u4y-0L-ZCc"/>
+                        <outlet property="beerNameLabel" destination="sEd-08-NPi" id="e4h-9k-vsB"/>
+                        <outlet property="foodPairingsListLabel" destination="3zo-e0-Gzx" id="5Sb-ec-J3j"/>
+                        <outlet property="ingredientsListLabel" destination="I8L-u2-EUv" id="PHE-z4-fxJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pbe-Gd-7k4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="-79.017857142857139"/>
+        </scene>
+    </scenes>
+</document>
